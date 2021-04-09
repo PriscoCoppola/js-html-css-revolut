@@ -8,3 +8,126 @@
 body {
     font-family: 'Roboto', sans-serif;
 }
+
+/* HEADER */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Header Left */
+.header-left ul,
+.header-right ul {
+    display: flex;
+    align-items: center;
+    padding: 20px 0 20px 50px;
+    list-style: none;
+}
+
+.header-left ul li a,
+.header-right ul li a {
+    padding: 0 20px;
+    text-decoration: none;
+    color: #8c8e8f;
+}
+
+.header-left ul li a:hover,
+.header-right ul li a:hover {
+    color: #191c1f;
+}
+
+.header-left ul img {
+    width: 50px;
+}
+
+.header-right .with-dropdown {
+    position: relative;
+}
+
+.dropdown {
+    display: none;  /* jQuery */
+}
+
+.header-right .menu {
+    position: absolute;
+    top: 35px;
+    right: -305px;
+    display: flex;
+    width: max-content;
+    padding: 15px 5px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0, .5);
+}
+
+.header-right .dropdown-menu {
+    position: absolute;
+    top: 35px;
+    right: -47px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+    padding: 15px 5px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0, .5);
+}
+
+.header-right .menu .one {
+    flex-direction: column;
+    padding: 0;
+}
+
+.header-right .dropdown-menu li,
+.header-right .menu li {
+    padding-bottom: 30px;
+}
+
+.header-right .dropdown-menu li:last-child,
+.header-right .menu li:last-child {
+    padding: 0;
+}
+
+.header-right .menu li:first-child {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    color: #ced5db;
+}
+
+.header-right .menu li i {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    background: #ced5db;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Header Right */
+.header-right ul {
+    padding: 20px 50px 20px 0;
+}
+
+.header-right .btn {
+    margin-right: 15px;
+    background: #f0f0f0;
+    padding: 15px 5px;
+    border-radius: 15px;
+}
+
+.header-right .btn a {
+    color: #000;
+}
+
+.header-right .btn.grey {
+    background: #191c1f;
+}
+
+.header-right .btn.grey a {
+    color: #fff;
+}
+
